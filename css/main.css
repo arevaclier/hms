@@ -4,7 +4,8 @@
     border: 1px solid #383737;
     background: #3d3d3d url('../img/sep-half.png');
     color:white;
-    /*height:290px;*/
+    height:200px;
+    padding-top: 10px;
 }
 
 .dash-unit:hover {
@@ -16,7 +17,11 @@
 
 .dash-unit .dash-title {
     text-transform: uppercase;
-    margin-top: 10px;
-    padding-top: 10px;
-    height: auto;
+}
+
+.well-title {
+    text-transform: uppercase;
+}
+.close-icon:hover {
+    color:#3c3c3c;
 }

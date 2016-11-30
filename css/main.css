@@ -25,3 +25,31 @@
 .close-icon:hover {
     color:#3c3c3c;
 }
+.light-room {
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-room-on {
+    background: #bd7316;
+    background: -webkit-radial-gradient(#bd7316, #f4b342);
+    background: -o-radial-gradient(#bd7316, #f4b342);
+    background: -moz-radial-gradient(#bd7316, #f4b342);
+    background: radial-gradient(#bd7316, #f4b342);
+
+}
+.light-room:hover {
+    opacity: 0.7;
+}
+.light-room-off {
+    background: #1c1c1c;
+}
+.view-more {
+    margin-top: 20px;
+}
+.page-title {
+    margin-bottom: 50px;
+}

@@ -76,6 +76,12 @@
     </div><!-- /.navbar-collapse -->
 </nav>
 <div class="container center-block text-center">
+
+    <div class="col-xs-12 text-left page-title">
+        <p class="lead">Dashboard</p>
+        <p>This dashboard allows for interaction with a smarthome equipped with Philips Hue lights, KlikAnKlikUit power switches, a transmission server and a plex media server.</p>
+    </div>
+
     <div class="col-xs-6 col-md-3 dash-unit light-tile"><span class="dash-title"><i
             class="glyphicon glyphicon-adjust"></i><br/>Light control</span>
         <hr/>
@@ -103,9 +109,13 @@
             </div>
         </div>
         <p>Current state:</p>
-
         <div class="row">
-            <span class="pull-right"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
+            <div class="light-room light-room-on col-xs-4"><p>Bedroom:<br/>ON</p></div>
+            <div class="light-room light-room-off col-xs-4"><p>Living room:<br/>OFF</p></div>
+            <div class="light-room light-room-off col-xs-4"><p>Kitchen:<br/>OFF</p></div>
+        </div>
+        <div class="row">
+            <span class="pull-right view-more"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
         </div>
     </div>
     <div class="container well navigation-well switch-well col-xs-12">
@@ -115,9 +125,12 @@
             </div>
         </div>
         <p>Current state:</p>
-
         <div class="row">
-            <span class="pull-right"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
+            <div class="light-room light-room-off col-xs-6"><p>Stereo:<br/>OFF</p></div>
+            <div class="light-room light-room-on col-xs-6"><p>Printer:<br/>ON</p></div>
+        </div>
+        <div class="row">
+            <span class="pull-right view-more"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
         </div>
     </div>
     <div class="container well navigation-well torrent-well col-xs-12">
@@ -128,8 +141,29 @@
         </div>
         <p>Active downloads:</p>
 
+        <table class="table table-bordered text-left">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Completion</th>
+                <th>ETA</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="success">
+                <td>Ubuntu 16.04</td>
+                <td>100% - Seeding</td>
+                <td>00:00</td>
+            </tr>
+            <tr>
+                <td>Elementary OS Loki</td>
+                <td>95% - Downloading</td>
+                <td>04:00</td>
+            </tr>
+            </tbody>
+        </table>
         <div class="row">
-            <span class="pull-right"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
+            <span class="pull-right view-more"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
         </div>
     </div>
     <div class="container well navigation-well media-well col-xs-12">
@@ -141,10 +175,25 @@
         <p>Currently playing:</p>
 
         <div class="row">
-            <span class="pull-right"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
+            <span class="pull-right view-more"><a href="#">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
         </div>
     </div>
 </div>
+<footer>
+<div class="container">
+    <div class="row">
+        <hr/>
+        <div class="col-lg-12">
+            <div class="col-xs-4">
+                <a href = "#">Github</a>
+            </div>
+            <div class="col-xs-8">
+                <p class="text-muted pull-right">Arthur Revaclier 2016</p>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -30,48 +30,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Home management system</a>
+        <a class="navbar-brand" href="index.html">Home management system</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
 
         <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Light control <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
+            <li>
+                <a href="lights.html" >Light control</a>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch control <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
+            <li>
+                <a href="switches.html">Switch control</a>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
+            <li>
+                <a href="downloads.html">Downloads</a>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media center <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
+            <li>
+                <a href="media.html">Media center</a>
             </li>
         </ul>
     </div><!-- /.navbar-collapse -->
@@ -111,9 +87,9 @@
         </div>
         <p>Current state:</p>
         <div class="row">
-            <div class="light col-xs-4 lamp-group lamp-group-id-1"><p class="group-lamp-text"></p></div>
-            <div class="light col-xs-4 lamp-group lamp-group-id-2"><p class="group-lamp-text"></p></div>
-            <div class="light col-xs-4 lamp-group lamp-group-id-3"><p class="group-lamp-text"></p></div>
+            <div class="light col-xs-4 lamp-group light-room-off lamp-group-id-1 "><p class="group-lamp-text">Bedroom:<br/><span class="state">OFF</span></p></div>
+            <div class="light col-xs-4 lamp-group light-room-off lamp-group-id-2"><p class="group-lamp-text">Living room:<br/><span class="state">OFF</span></p></div>
+            <div class="light col-xs-4 lamp-group light-room-off lamp-group-id-3"><p class="group-lamp-text">Kitchen:<br/><span class="state">OFF</span></p></div>
         </div>
         <div class="row">
             <span class="pull-right view-more"><a href="lights.html">View more <i class="glyphicon glyphicon-chevron-right"></i> </a></span>
@@ -200,6 +176,6 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/animations.js"></script>
-<script src="js/hue.js"></script>
+<script src="js/hue_web.js"></script>
 </body>
 </html>

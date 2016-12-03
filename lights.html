@@ -34,46 +34,22 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Light control <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch control <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media center <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
-        </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="lights.html" >Light control</a>
+                </li>
+                <li>
+                    <a href="switches.html">Switch control</a>
+                </li>
+                <li>
+                    <a href="downloads.html">Downloads</a>
+                </li>
+                <li>
+                    <a href="media.html">Media center</a>
+                </li>
+            </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
 <div class="container center-block text-center">
@@ -81,38 +57,38 @@
         <h2 class="room">Bedroom</h2><hr/>
     </div>
 
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Lightstrip bed:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Lightstrip bed:<br/><span class="state">OFF</span></p>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Lightstrip desk:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Lightstrip desk:<br/><span class="state">OFF</span></p>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Bedroom S:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Bedroom S:<br/><span class="state">OFF</span></p>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Bedroom N:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Bedroom N:<br/><span class="state">OFF</span></p>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Bloom:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Bloom:<br/><span class="state">OFF</span></p>
     </div>
     <div class="row col-xs-12">
         <h2 class="room">Living room</h2><hr/>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Lightstrip couch:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Lightstrip couch:<br/><span class="state">OFF</span></p>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Living room NW:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Living room NW:<br/><span class="state">OFF</span></p>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Living room SW:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Living room SW:<br/><span class="state">OFF</span></p>
     </div>
     <div class="row col-xs-12">
         <h2 class="room">Kitchen</h2><hr/>
     </div>
-    <div class="col-xs-6 col-md-3 dash-unit light">
-        <p>Kitchen:<br/>OFF</p>
+    <div class="col-xs-6 col-md-3 dash-unit light lamp-group light-room-off">
+        <p>Kitchen:<br/><span class="state">OFF</span></p>
     </div>
 </div>
 <footer>
@@ -135,6 +111,6 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/animations.js"></script>
-<script src="js/hue.js"></script>
+<script src="js/hue_web.js"></script>
 </body>
 </html>

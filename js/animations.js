@@ -4,13 +4,7 @@
 
 $(document).ready(function(){
 
-    //Dropdown menu
-    $('.dropdown').on('show.bs.dropdown', function(e){
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
-    });
-    $('.dropdown').on('hide.bs.dropdown', function(e){
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
-    });
+    //Home page
 
     //Hidden well
     $('.navigation-well').hide();

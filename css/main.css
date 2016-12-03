@@ -75,6 +75,9 @@ body {
 .switch:hover{
     opacity:0.7;
 }
+.well hr{
+    margin-top: 40px;
+}
 
 /* -----------------------------------
                 LIGHTS

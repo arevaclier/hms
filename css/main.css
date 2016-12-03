@@ -65,3 +65,23 @@ body {
     color: #605e5e;
     margin-bottom: -15px;
 }
+.top-tile {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-tile:hover {
+    opacity: 0.7;
+}
+.expand-tile {
+    height: 30px;
+    background: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.expand-tile:hover {
+    opacity:0.7;
+}

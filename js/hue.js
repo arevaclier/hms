@@ -3,8 +3,16 @@
  */
 
 //Server address and api key
-var hueServer = "http://192.168.0.2/api/oVB0IqYnK7Y7HpOpLj7foeAm7ZFkqCwnwDr-FIye/";
+var address = "http://192.168.0.2/";
+var apiKey = "api/oVB0IqYnK7Y7HpOpLj7foeAm7ZFkqCwnwDr-FIye/"
+var hueServer = address + apiKey;
 
+function getHSL(h, s) {
+    h = Math.round(h * 360 / 65535);
+    s = Math.round(s / 255 * 100);
+
+    return [h,s];
+}
 
 $(document).ready(function() {
 
@@ -34,6 +42,7 @@ $(document).ready(function() {
        //Add them to respective arrays
        groupNames.push(response.name);
        states.push(response.action.on);
+
    }
 
    //Initial run, sets the tiles according to the result of the REST call
@@ -68,6 +77,7 @@ $(document).ready(function() {
                if(states[i] == true) {
 
                    //Turn off the lights
+
                    http.open("PUT", hueServer + "groups/"+ (i+1) +"/action", false);
                    http.send(JSON.stringify({
                        "on":false
@@ -84,10 +94,12 @@ $(document).ready(function() {
                else {
 
                    //Turn on the lights
+
                    http.open("PUT", hueServer + "groups/"+ (i+1) +"/action", false);
                    http.send(JSON.stringify({
                        "on":true
                    }));
+
 
                    //Update the state to "ON"
                    states[i] = true;

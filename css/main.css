@@ -1,3 +1,6 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 .dash-unit {
     margin-bottom: 30px;
     padding-bottom:10px;
@@ -25,7 +28,7 @@
 .close-icon:hover {
     color:#3c3c3c;
 }
-.light-room {
+.light {
     height: 150px;
     border: 1px solid black;
     display: flex;
@@ -52,4 +55,13 @@
 }
 .page-title {
     margin-bottom: 50px;
+}
+
+/* -----------------------------------
+                LIGHTS
+ -------------------------------------*/
+.room {
+    text-align: left;
+    color: #605e5e;
+    margin-bottom: -15px;
 }

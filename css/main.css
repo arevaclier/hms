@@ -57,6 +57,25 @@ body {
     margin-bottom: 50px;
 }
 
+.switch {
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switch-off {background: #1c1c1c;}
+.switch-on {
+    background: #bd7316;
+    background: -webkit-radial-gradient(#bd7316, #f4b342);
+    background: -o-radial-gradient(#bd7316, #f4b342);
+    background: -moz-radial-gradient(#bd7316, #f4b342);
+    background: radial-gradient(#bd7316, #f4b342);
+}
+.switch:hover{
+    opacity:0.7;
+}
+
 /* -----------------------------------
                 LIGHTS
  -------------------------------------*/

@@ -12,5 +12,15 @@ $(document).ready(function () {
             $(this).find(".state").text("OFF");
         }
     })
+    $('.switch').click(function () {
+        if($(this).hasClass("switch-off")) {
+            $(this).toggleClass("switch-on switch-off");
+            $(this).find(".state").text("ON");
+        }
+        else {
+            $(this).toggleClass("switch-on switch-off");
+            $(this).find(".state").text("OFF");
+        }
+    })
 
 });

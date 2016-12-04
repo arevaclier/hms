@@ -95,6 +95,16 @@ $(document).ready(function(){
     $("#brightness").on("slide", function(slideEvt) {
         $("#brightness-value").text(slideEvt.value);
     });
+
+    //Downloads page
+    $('.hide-active-downloads').click(function () {
+        $('.active-downloads').toggle();
+        $(this).toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    });
+    $('.hide-inactive-downloads').click(function () {
+        $('.inactive-downloads').toggle();
+        $(this).toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    });
 });
 
 

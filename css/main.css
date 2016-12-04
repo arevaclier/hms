@@ -126,3 +126,20 @@ body {
 h2 .glyphicon:hover {
     opacity:0.7;
 }
+
+/*-------------------------------
+            DOWNLOADS
+--------------------------------- */
+.downloads {
+    text-align: left;
+    color: #605e5e;
+    margin-bottom: -15px;
+}
+.downloads-icon {
+    background: #3d3d3d;
+    padding: 3px;
+    border-radius: 7px;
+}
+.downloads-icon:hover {
+    opacity: 0.7;
+}
